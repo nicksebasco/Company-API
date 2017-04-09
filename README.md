@@ -14,15 +14,16 @@ Examples:
   If I want to get data on all bicycle companies in Destin, Fl and output the data to a csv file named destinBicycles.csv, 
   I could make the following http get request from bash:
   
-  curl -o destinBicycles.csv "http://localhost:8060/API?company=bicycle&location=Destin"
+  <code> curl -o destinBicycles.csv "http://localhost:8060/API?company=bicycle&location=Destin" </code>
   
   Furthermore if I wanted to get the data in json for some other processing script to consume I could do:
-  curl "http://localhost:8060/API?company=bicycle&location=Destin&json=true" > processing.py
+  <code> curl "http://localhost:8060/API?company=bicycle&location=Destin&json=true" > processing.py </code>
   
 Output:
 
   An example of the json output:
-  <code>
+ 
+  <pre>
   json = {
   "0":{ 
     name: 'The Melting Pot',
@@ -44,5 +45,6 @@ Output:
     // same keys as above for the nth results, with the nth values
   }
   }
-  </code>
+  </pre>
+  
 
