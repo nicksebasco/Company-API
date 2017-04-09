@@ -1,6 +1,4 @@
-var fs = require("fs"),
-path = require("path"),
-json2csv = require('json2csv');
+var json2csv = require('json2csv');
 
 module.exports = function (res,name,data){
   // other parameters contained in data: store_hours
