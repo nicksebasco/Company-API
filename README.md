@@ -1,25 +1,23 @@
 # Company-API
 Get information about US companies
 
-This project provides a lightweight solution to getting information about certain companies based on two parameters: 
-(location and a search query).
-
-The api provides a convenient solution to gathering company data and outputting into a more usable format ( json or csv ).
+This project provides a covenient solution for gathering information about United States companies based on two parameters: 
+(location and a search query) and outputting the data into a application/user friendly format ( json or csv ).
 
 The location parameter can be any valid United States: zip code, city, or state.
-The search query parameter can be anything:
+The search query parameter can be anything!
 
-<h6>Examples:</h6>
+<h5>Examples:</h5>
 
   If I want to get data on all bicycle companies in Destin, Fl and output the data to a csv file named destinBicycles.csv, 
   I could make the following http get request from bash:
   
   <code> curl -o destinBicycles.csv "http://localhost:8060/API?company=bicycle&location=Destin" </code>
   
-  Furthermore if I wanted to get the data in json for some other processing script to consume I could do:
+  Furthermore if I want to return the data as json for some other processing script to consume:
   <code> curl "http://localhost:8060/API?company=bicycle&location=Destin&json=true" > processing.py </code>
   
-<h6>Output:</h6>
+<h5>Output:</h5>
 
   An example of the json output:
  
