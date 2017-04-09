@@ -1,0 +1,19 @@
+{
+  "name": "company-api",
+  "version": "1.0.0",
+  "description": "Get data on United States companies.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "nps",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "json2csv": "^3.7.3",
+    "morgan": "^1.8.1",
+    "request": "^2.81.0"
+  }
+}
