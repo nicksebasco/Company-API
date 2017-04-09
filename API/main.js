@@ -1,8 +1,3 @@
-/*
-Version 3.0
-- lightweight server added
-- promise based and predicatble.
-*/
 var express = require("express"),
 path = require("path"),
 csv = require("./csv.js"),
