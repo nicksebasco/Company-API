@@ -7,6 +7,5 @@ module.exports = function (res,name,data){
   // map data object to an array of objects, needed for json2csv
   var fields = [ "name", "description", "phone", "website", "email", "street","city","zip","state"],
   csv = json2csv({ data: data, fields: fields }),
-  fileName = name+'.csv';
   res.send(csv);
 };
