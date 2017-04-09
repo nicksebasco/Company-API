@@ -14,8 +14,8 @@ The search query parameter can be anything!
   
   <code> curl -o destinBicycles.csv "http://localhost:8060/API?company=bicycle&location=Destin" </code>
   
-  Furthermore if I want to return the data as json for some other processing script to consume:
-  <code> curl "http://localhost:8060/API?company=bicycle&location=Destin&json=true" > processing.py </code>
+  Furthermore if I want to return the data as json so that some other processing script can consume it:
+  <code> curl "http://localhost:8060/API?company=bicycle&location=Destin&json=true" | python processing.py </code>
   
 <h5>Output:</h5>
 
